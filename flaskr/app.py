@@ -9,8 +9,8 @@ db.init_app(app)
 db.create_all()
 
 with app.app_context():
-    u = Usuario(nombre='Alejo', contrasena='Alejo254')
-    a = Album(titulo="Aventuras maquiavelicas", anio='1980', descripcion='Lo mejor de los mejor', medio=Medio.CD)
+    u = Usuario(nombre='mauricio', contrasena='mao123')
+    a = Album(titulo="blessed ovi", anio='2023', descripcion='canciones de bleesd y otro artitas', medio=Medio.CD)
     u.albumes.append(a)
     db.session.add(u)
     db.session.commit()
